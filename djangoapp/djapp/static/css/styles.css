@@ -1,0 +1,88 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.identic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.logo {
+    max-width: 80px;
+    max-height: 80px;
+    justify-self: start;
+}
+.navstart {
+    border: none;
+    background-color: white;
+    max-width: 40px;
+    max-height: 40px;
+}
+.nav {
+    position: absolute;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.hidden {
+    display: none;
+}
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 90%;
+}
+
+.section {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.section p {
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.image-container img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

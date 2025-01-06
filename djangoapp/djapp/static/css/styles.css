@@ -2,10 +2,58 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: black;
+    h3 {
+        color: white;
+        align-self: center;
+    }
+    width: 100%;
+}
+.starter {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    h1 {
+        color: white;
+        margin-top: 0px;
+        align-self: start;
+        justify-self: end;
+        margin-right: 30px;
+        margin-top: 40px;
+        font-size: 10vh;
+    }
+    margin-bottom: 15px;
+}
+.starter::before {
+    content: "";
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+nav {
+    button {
+        border: none;
+        background-color: black;
+        color: white;
+    }
+    button:hover {
+        border-bottom: 1px solid white;
+    }
+    align-content: center;
+    padding-right: 20px;
 }
 .identic {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
 }
 .logo {
     max-width: 80px;
@@ -14,9 +62,10 @@ header {
 }
 .navstart {
     border: none;
-    background-color: white;
+    background-color: black;
     max-width: 40px;
     max-height: 40px;
+    align-self: center;
 }
 .nav {
     position: absolute;
@@ -24,6 +73,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: white;
+    z-index: 100;
 }
 .hidden {
     display: none;
@@ -31,8 +81,9 @@ header {
 body {
     font-family: sans-serif;
     line-height: 1.6;
-    margin: 20px;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -47,7 +98,7 @@ h1 {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     max-width: 1200px;
     width: 90%;
@@ -58,6 +109,9 @@ h1 {
     padding: 15px;
     border-radius: 8px;
     background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column; /* Расположение элементов вертикально */
+    align-items: center;
 }
 
 .section h2 {
@@ -78,11 +132,32 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
-.image-container img {
-    max-width: 150px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.text-content {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff; 
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+}
+
+#footer p {
+    margin: 0;
+    font-size: 14px;
 }

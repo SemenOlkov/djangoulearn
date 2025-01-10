@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('/static/fonts/Oswald-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Jersey';
+    src: url('/static/fonts/Jersey10-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SofiaSans';
+    src: url('/static/fonts/SofiaSansCondensed-VariableFont_wght.ttf') format('truetype');
+}
 header {
     display: flex;
     flex-direction: row;
@@ -6,6 +18,17 @@ header {
     h3 {
         color: white;
         align-self: center;
+        font-size: 25px;
+        margin: 0px;
+        font-family: 'Oswald';
+        font-size: 32px;
+    }
+    .identic {
+        h3 {
+            font-size: 32px;
+            font-family: 'Jersey';
+            font-weight: normal;
+        }
     }
     width: 100%;
 }
@@ -46,14 +69,15 @@ nav {
     }
     button:hover {
         border-bottom: 1px solid white;
+        cursor: pointer;
     }
     align-content: center;
     padding-right: 20px;
 }
 .identic {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
 }
 .logo {
     max-width: 80px;
@@ -67,13 +91,38 @@ nav {
     max-height: 40px;
     align-self: center;
 }
+.navstart:hover {
+    cursor: pointer;
+}
 .nav {
     position: absolute;
     overflow: visible;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    justify-content: space-around;
+    background-color: #101010;
     z-index: 100;
+    min-width: 38%;
+    height: calc(100% - 79px);
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    .navrow {
+        svg {
+            margin-left: 20px;
+        }
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .navrow:hover {
+        cursor: pointer;
+        background-color: #303030;
+    }
 }
 .hidden {
     display: none;
@@ -160,4 +209,8 @@ h1 {
 #footer p {
     margin: 0;
     font-size: 14px;
+}
+
+main {
+    font-family: 'SofiaSans';
 }

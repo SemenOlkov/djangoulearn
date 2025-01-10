@@ -155,7 +155,7 @@ h1 {
 
 .section {
     border: 1px solid #ddd;
-    padding: 15px;
+    padding: 0px;
     border-radius: 8px;
     background-color: #f9f9f9;
     display: flex;
@@ -185,13 +185,12 @@ h1 {
     img {
         width: 100%;
         height: auto;
+        border-radius: 10px 10px 0 0;
     }
 }
 
 .text-content {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 #footer {
@@ -200,10 +199,10 @@ h1 {
     text-align: center;
     padding: 20px;
     position: relative;
-    bottom: 0;
-    width: 100%;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
     margin-top: 30px;
+    bottom: 0;
+    overflow-y: scroll;
 }
 
 #footer p {
@@ -213,4 +212,10 @@ h1 {
 
 main {
     font-family: 'SofiaSans';
+}
+
+.text-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }

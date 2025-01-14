@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Общая статистика
+{% endblock %}
+
+{% block main %}
+    <main>
+        <div class="wrapper">
+            <div class="graphs-container">
+                {% include 'usability-graphs.html' %}
+                {% include 'cities-graphs.html' %}
+                {% include 'skills-graphs.html' %}
+            </div>
+        </div>
+    </main>
+{% endblock %}

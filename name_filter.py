@@ -11,4 +11,4 @@ df = pd.read_csv('vacancies_2024.csv')
 profession_names = ['backend-программист', 'backend', 'бэкэнд', 'бэкенд', 'бекенд', 'бекэнд', 'back end', 'бэк энд', 'бэк енд', 'django', 'flask', 'laravel', 'yii', 'symfony']
 filtered_df = filter_dataframe(df, 'name', profession_names)
 
-filtered_df.to_csv('backend_vacancies.csv')
+filtered_df.to_csv('backend_vacancies.csv', index=False)

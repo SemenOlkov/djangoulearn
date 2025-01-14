@@ -219,3 +219,36 @@ main {
     padding-right: 15px;
     padding-bottom: 15px;
 }
+.button-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .rbutton {
+        justify-self: end;
+    }
+    .lbutton {
+        justify-self: start;
+    }
+    width: 100%;
+}
+.rs {
+    display: flex;
+    justify-content: end;
+}
+.le {
+    display: flex;
+    justify-content: start;
+}
+.sliderb {
+    border-radius: 15%;
+    height: 45px;
+    width: 55px;
+    svg {
+        align-self: center;
+        justify-self: center;
+    }
+    background-color: #f1f1f1;
+}
+.sliderb:hover {
+    cursor: pointer;
+    background-color: #f9f9f9;
+}

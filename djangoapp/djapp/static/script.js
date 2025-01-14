@@ -85,3 +85,4 @@ document.getElementById('10to9').addEventListener('click', function() {
     document.getElementById('10').classList.add('hidden');
     document.getElementById('9').classList.remove('hidden');
 });
+

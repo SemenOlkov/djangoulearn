@@ -229,6 +229,7 @@ main {
         justify-self: start;
     }
     width: 100%;
+    margin-bottom: 8px;
 }
 .rs {
     display: flex;
@@ -251,4 +252,37 @@ main {
 .sliderb:hover {
     cursor: pointer;
     background-color: #f9f9f9;
+}
+
+.doublecolumn {
+    border-spacing: 0.5px;
+    width: 80%;
+    justify-self: center;
+    th {
+        font-size: 30px;
+        border: #101010 1px solid;
+        text-align: center;
+    }
+    td {
+        border: #101010 1px solid;
+        font-size: 20px;
+        text-align: center;
+    }
+    margin-top: 8px;
+}
+
+.fontcorrect {
+    td {
+        font-size: 15px;
+    }
+}
+.middle-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    img {
+        justify-self: center;
+    }
+    div {
+        justify-self: center;
+    }
 }

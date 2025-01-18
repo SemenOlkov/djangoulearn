@@ -1,5 +1,8 @@
 from django.contrib import admin
-from .models import City, Skill
+from .models import SalaryData
 
-admin.site.register(City)
-admin.site.register(Skill)
+@admin.register(SalaryData)
+class SalaryDataAdmin(admin.ModelAdmin):
+    list_display = ('year', 'average_salary')
+    list_editable = ('average_salary',)
+    search_fields = ('year',)

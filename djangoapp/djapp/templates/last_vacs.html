@@ -8,6 +8,7 @@
     <main>
         <div class="wrapper">
             <div class="table-container">
+                <h1 style="justify-self: center;">Последние вакансии</h1>
                 <table class="doublecolumn">
                     <tr>
                         <th>Название</th>
@@ -17,43 +18,20 @@
                         <th>Оклад</th>
                         <th>Название региона</th>
                         <th>Дата публикации вакансии</th>
+                        <th>Ссылка</th>
                     </tr>
-                    <tr>
-                        <td>Информация 1</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                    </tr>
-                    <tr>
-                        <td>Информация 1</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                    </tr>
-                    <tr>
-                        <td>Информация 1</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                    </tr>
-                    <tr>
-                        <td>Информация 1</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                        <td>Информация 2</td>
-                    </tr>
+                    {% for i in vacs %}
+                        <tr>
+                            <td>{{ i.name }}</td>
+                            <td>{{ i.description }}</td>
+                            <td>{{ i.key_skills }}</td>
+                            <td>{{ i.employer }}</td>
+                            <td>{{ i.salary }}</td>
+                            <td>{{ i.area }}</td>
+                            <td>{{ i.published_at }}</td>
+                            <td>{{ i.alternate_url }}</td>
+                        </tr>
+                    {% endfor %}
                 </table>
             </div>
         </div>
